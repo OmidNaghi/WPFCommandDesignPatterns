@@ -43,6 +43,7 @@ namespace WPFCommandDesignPattern
         {
             if (_TargetExecuteMethod != null) _TargetExecuteMethod();
         }
+
     }
 
     public class RelayComman<T> : ICommand
