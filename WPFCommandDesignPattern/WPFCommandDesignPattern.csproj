@@ -64,10 +64,11 @@
     </ApplicationDefinition>
     <Compile Include="Services\IUsersRepository.cs" />
     <Compile Include="Services\UsersRepository.cs" />
-    <Compile Include="Users\UseListViewModel.cs" />
+    <Compile Include="Users\UserListViewModel.cs" />
     <Compile Include="Users\UserListView.xaml.cs">
       <DependentUpon>UserListView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModelLocator.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

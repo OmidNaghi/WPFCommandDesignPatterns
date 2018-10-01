@@ -22,7 +22,6 @@ namespace WPFCommandDesignPattern.Users
     {
         public UserListView()
         {
-            this.DataContext = new Users.UseListViewModel();
             InitializeComponent();
         }
     }

@@ -9,11 +9,11 @@ using WPFCommandDesignPattern.Services;
 
 namespace WPFCommandDesignPattern.Users
 {
-    public class UseListViewModel
+    public class UserListViewModel
     {
         private IUsersRepository _repo = new UsersRepository();
 
-        public UseListViewModel()
+        public UserListViewModel()
         {
             if (DesignerProperties.GetIsInDesignMode(new System.Windows.DependencyObject())) return;
             
