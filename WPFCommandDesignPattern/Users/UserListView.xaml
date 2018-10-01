@@ -7,6 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              local:ViewModelLocator.AutoWireViewModel="True">
+    <UserControl.InputBindings>
+        <KeyBinding Key="D" Modifiers="Ctrl" Command="{Binding DeleteCommand}"></KeyBinding>
+    </UserControl.InputBindings>
     <UserControl.Resources>
         <DataTemplate x:Key="UserTemplate">
             <StackPanel>
@@ -18,14 +21,24 @@
     </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
-        <DataGrid x:Name="UseDataGrid"
+        <Button Content="Delete"
+                Command="{Binding DeleteCommand}"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="75">
+            
+        </Button>
+            <DataGrid x:Name="UseDataGrid"
                   AutoGenerateColumns="False"
                   EnableRowVirtualization="True"
                   ItemsSource="{Binding Users}"
-                  RowDetailsVisibilityMode="VisibleWhenSelected">
+                  SelectedItem="{Binding SelectedUser}"
+                  RowDetailsVisibilityMode="VisibleWhenSelected"
+                  Grid.Row="2">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="UserIDColumn"
                                     Binding="{Binding UserID}"
@@ -42,9 +55,9 @@
                 </DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <ListBox Grid.Row="1"
-                 ItemsSource="{Binding Users}"
-                 ItemTemplate="{StaticResource ResourceKey=UserTemplate}">
+        <ListBox ItemsSource="{Binding Users}"
+                 ItemTemplate="{StaticResource ResourceKey=UserTemplate}"
+                 Grid.Row="1">
         </ListBox>
     </Grid>
 </UserControl>
