@@ -7,7 +7,44 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              local:ViewModelLocator.AutoWireViewModel="True">
+    <UserControl.Resources>
+        <DataTemplate x:Key="UserTemplate">
+            <StackPanel>
+                <TextBlock Text="{Binding UserID}"></TextBlock>
+                <TextBlock Text="{Binding UserName}"></TextBlock>
+                <TextBlock Text="{Binding Email}"></TextBlock>
+            </StackPanel>
+        </DataTemplate>
+    </UserControl.Resources>
     <Grid>
-        <DataGrid ItemsSource="{Binding Users}"></DataGrid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <DataGrid x:Name="UseDataGrid"
+                  AutoGenerateColumns="False"
+                  EnableRowVirtualization="True"
+                  ItemsSource="{Binding Users}"
+                  RowDetailsVisibilityMode="VisibleWhenSelected">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="UserIDColumn"
+                                    Binding="{Binding UserID}"
+                                    Header="ID"
+                                    Width="SizeToHeader">
+                </DataGridTextColumn>
+                <DataGridTextColumn x:Name="UserNameColumn"
+                                    Binding="{Binding UserName}"
+                                    Header="User Name">
+                </DataGridTextColumn>
+                <DataGridTextColumn x:Name="EmailColumn"
+                                    Binding="{Binding Email}"
+                                    Header="Emaile">
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <ListBox Grid.Row="1"
+                 ItemsSource="{Binding Users}"
+                 ItemTemplate="{StaticResource ResourceKey=UserTemplate}">
+        </ListBox>
     </Grid>
 </UserControl>

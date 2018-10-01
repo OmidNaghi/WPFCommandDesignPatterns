@@ -62,6 +62,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MainWindowViewModel.cs" />
     <Compile Include="Services\IUsersRepository.cs" />
     <Compile Include="Services\UsersRepository.cs" />
     <Compile Include="Users\UserListViewModel.cs" />
