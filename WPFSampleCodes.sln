@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityDataAccess", "DataAccess\SecurityDataAccess.csproj", "{6250F723-C6D3-43E8-B156-EBC284D98703}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFCommandDesignPattern", "WPFCommandDesignPattern\WPFCommandDesignPattern.csproj", "{B3317AB3-0E6B-436E-BF8A-9EF9764A921B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6250F723-C6D3-43E8-B156-EBC284D98703}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6250F723-C6D3-43E8-B156-EBC284D98703}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6250F723-C6D3-43E8-B156-EBC284D98703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3317AB3-0E6B-436E-BF8A-9EF9764A921B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3317AB3-0E6B-436E-BF8A-9EF9764A921B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3317AB3-0E6B-436E-BF8A-9EF9764A921B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3317AB3-0E6B-436E-BF8A-9EF9764A921B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

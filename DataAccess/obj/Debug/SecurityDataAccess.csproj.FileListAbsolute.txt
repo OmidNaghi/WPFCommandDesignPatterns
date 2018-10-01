@@ -1,0 +1,11 @@
+C:\Users\ONA12064\source\repos\WPFSampleCodes\DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\ONA12064\source\repos\WPFSampleCodes\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ONA12064\source\repos\WPFSampleCodes\DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\ONA12064\source\repos\WPFSampleCodes\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ONA12064\source\repos\WPFSampleCodes\DataAccess\obj\Debug\SecurityDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ONA12064\source\repos\WPFSampleCodes\DataAccess\obj\Debug\SecurityDataAccess.csproj.CopyComplete
+C:\Users\ONA12064\source\repos\WPFSampleCodes\DataAccess\bin\Debug\SecurityDataAccess.dll.config
+C:\Users\ONA12064\source\repos\WPFSampleCodes\DataAccess\bin\Debug\SecurityDataAccess.dll
+C:\Users\ONA12064\source\repos\WPFSampleCodes\DataAccess\bin\Debug\SecurityDataAccess.pdb
+C:\Users\ONA12064\source\repos\WPFSampleCodes\DataAccess\obj\Debug\SecurityDataAccess.dll
+C:\Users\ONA12064\source\repos\WPFSampleCodes\DataAccess\obj\Debug\SecurityDataAccess.pdb
